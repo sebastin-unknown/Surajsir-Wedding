@@ -1,0 +1,10 @@
+version: '3'
+services:
+  website:
+    image: nginx:latest
+    container_name: website
+    volumes:
+      - D:/SurajSir/surajsir.github.io:/usr/share/nginx/html
+    ports:
+      - 8000:80
+    restart: always
